@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Verko — video editor and motion designer. Kinetic typography, UI motion and product callouts.">
+<title>Verko — Video Editor &amp; Motion Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;800&display=swap" rel="stylesheet">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')</script>
+<style>
+html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopped{overflow:clip}.lenis.lenis-smooth iframe{pointer-events:none}
+:root{color-scheme:dark;--bg:#07070a;--fg:#f2f1f6;--mut:#8d8b99;--line:#1f1f27;--p:#8b5cf6;--p2:#c4b5fd;
+--serif:"Instrument Serif",Georgia,"Times New Roman",serif;--sans:"Inter Tight",-apple-system,"SF Pro Display","Segoe UI",Helvetica,Arial,sans-serif;
+--chrome:linear-gradient(180deg,#fff 0%,#a7a6b6 46%,#fff 54%,#6c6b7e 100%);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.5 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--p2);outline-offset:4px}
+.w{width:min(1320px,100% - 3rem);margin-inline:auto}
+.chrome{background:var(--chrome);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lbl{font:600 .72rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.lbl i{font-style:normal;color:var(--p2);padding:0 .5em}
+em{font:italic 400 1em var(--serif)}
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:20;padding-top:env(safe-area-inset-top,0px);mix-blend-mode:difference}
+.nav .w{display:flex;justify-content:space-between;align-items:center;height:68px}
+.nav b{font:800 1.15rem var(--sans);letter-spacing:.28em}.nav nav{display:flex;gap:1.6rem;font-size:.85rem}
+.nav a:hover{opacity:.6}
+#snd{font:600 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:inherit;background:none;border:1px solid currentColor;border-radius:999px;padding:.45rem .8rem;cursor:pointer}
+.soc{margin-top:2.5rem}.soc a:hover{color:var(--fg)}
+.cat{margin-bottom:5rem}.cat>header{display:flex;align-items:baseline;gap:1.2rem;flex-wrap:wrap;border-top:1px solid var(--line);padding:1.2rem 0 2rem}.cat h3{font:400 clamp(1.8rem,4.4vw,3.4rem)/1 var(--serif);letter-spacing:-.02em;margin:0}.cat>header .lbl{margin-left:auto}
+.vg{display:flex;flex-wrap:wrap;gap:1.75rem 1.5rem;align-items:flex-start}.vc.ls{flex:1 1 440px;max-width:calc(50% - .75rem)}.vc.pt{flex:1 1 200px;max-width:290px}
+.vc video{width:100%;display:block;border-radius:14px;background:#111;aspect-ratio:16/9;object-fit:cover;cursor:pointer}.vc.pt video{aspect-ratio:9/16}
+.vc .cp{display:flex;justify-content:space-between;gap:1rem;padding:.9rem .2rem 0}.vc .cp b{font:400 1.4rem/1.1 var(--serif);letter-spacing:-.01em}.vc small{display:block;color:var(--mut);font-size:.85rem;margin-top:.25rem}.vc .cp a{color:var(--p2);font-size:.85rem;white-space:nowrap}.vc .cp a:hover{color:#fff}
+.tls{border-top:1px solid var(--line)}.tl{display:grid;grid-template-columns:4rem 1fr auto;gap:1.5rem;align-items:baseline;padding:1.5rem 0;border-bottom:1px solid var(--line);transition:padding .4s,color .3s}.tl:hover{padding-left:1rem}.tl:hover h3{color:var(--p2)}.tl h3{margin:0;font:400 clamp(1.8rem,5vw,4rem)/1 var(--serif);letter-spacing:-.02em;transition:color .3s}.tl .n,.tl .t{color:var(--mut);font-size:.85rem}
+@media(max-width:900px){.vc.ls{max-width:100%;flex-basis:100%}}@media(max-width:700px){.tl{grid-template-columns:2.5rem 1fr}.tl .t{display:none}.vc.pt{flex:1 1 140px}}
+#bar{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--p),var(--p2));transform-origin:0 50%;transform:scaleX(0);z-index:30}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 0 2.5rem;position:relative;overflow:hidden}
+.orb{position:absolute;right:-12vw;top:10vh;width:min(70vw,720px);aspect-ratio:1;border-radius:46% 54% 52% 48%/52% 44% 56% 48%;
+background:conic-gradient(from 90deg,#fff,#6d4aff,#0b0b12,#d9ccff,#2a1a6e,#fff);filter:blur(1px) saturate(1.2);opacity:.9;will-change:transform}
+.orb::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.7),transparent 40%),radial-gradient(circle at 70% 80%,rgba(0,0,0,.6),transparent 55%)}
+.hero h1{position:relative;font:400 clamp(3.4rem,15.5vw,14rem)/.86 var(--serif);letter-spacing:-.035em;margin:0 0 2rem}
+.hero h1 em{color:var(--p2)}
+html.js .hero h1,html.js .hero .meta>*{visibility:hidden}
+.meta{position:relative;display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:1.4rem}
+.meta p{margin:0;max-width:34ch;color:var(--mut);font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.6rem;border-radius:999px;background:var(--fg);color:#000;font-weight:600;transition:background .25s,color .25s}
+.btn:hover{background:var(--p);color:#fff}
+/* marquee */
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:1.1rem 0}
+.mq div{display:flex;width:max-content;font:400 clamp(2rem,6vw,4.4rem)/1 var(--serif);white-space:nowrap}
+.mq span{padding-right:.5em}.mq span::after{content:"\\";color:var(--p);padding-left:.5em;font-style:italic}
+/* work */
+section{padding:8rem 0}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;gap:2rem;flex-wrap:wrap}
+h2{font:400 clamp(2.4rem,7vw,6rem)/.95 var(--serif);letter-spacing:-.03em;margin:0}
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:4rem 1fr auto auto;gap:1.5rem;align-items:baseline;padding:1.6rem 0;border-bottom:1px solid var(--line);transition:opacity .3s,padding .4s}
+.row .n{color:var(--mut);font-size:.85rem}.row h3{margin:0;font:400 clamp(1.8rem,5vw,4rem)/1 var(--serif);letter-spacing:-.02em}
+.row .t,.row .go{font-size:.85rem;color:var(--mut)}.row .go{color:var(--p2)}
+.rows:hover .row{opacity:.35}.rows .row:hover{opacity:1;padding-left:1rem}
+.peek{position:fixed;top:0;left:0;width:280px;aspect-ratio:9/12;margin:-150px 0 0 40px;border-radius:14px;pointer-events:none;z-index:15;overflow:hidden;visibility:hidden;opacity:0;
+background:conic-gradient(from 200deg,#fff,#6d4aff,#0b0b12,#d9ccff,#fff)}
+.peek span{position:absolute;left:14px;bottom:12px;font:italic 1.6rem var(--serif);color:#fff;mix-blend-mode:difference}
+/* statement */
+.st{padding:10rem 0}.st p{font:400 clamp(2rem,5.6vw,5rem)/1.08 var(--serif);letter-spacing:-.025em;margin:0;max-width:20ch}
+/* services */
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:2.5rem;border-top:1px solid var(--line);padding-top:2rem}
+.sv h3{font:400 2.2rem/1 var(--serif);margin:0 0 1.2rem}.sv ul{list-style:none;margin:0;padding:0;color:var(--mut)}.sv li{padding:.45rem 0;border-bottom:1px solid var(--line)}
+/* contact */
+.ct{text-align:center;padding:9rem 0 6rem}.ct h2{font-size:clamp(3rem,13vw,12rem);line-height:.9;margin-bottom:2.5rem}
+footer{border-top:1px solid var(--line);padding:1.6rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.cur{position:fixed;top:0;left:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;z-index:50}
+@media(max-width:700px){.nav nav a:not(:last-of-type){display:none}.row{grid-template-columns:2.5rem 1fr auto}.row .t{display:none}section{padding:5rem 0}}
+</style>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<header class="nav"><div class="w"><b>VERKO</b><nav><a href="#work">Work</a><a href="#services">Services</a><a href="#tools">Tools</a><a href="#about">About</a><a href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">Instagram ↗</a><button id="snd" type="button" aria-pressed="false">Sound off</button></nav></div></header>
+
+<main id="top">
+<section class="hero" style="padding-bottom:2.5rem">
+  <div class="orb" aria-hidden="true"></div>
+  <div class="w">
+    <h1><span class="chrome">Motion</span> that makes <em>people</em> stop scrolling.</h1>
+    <div class="meta">
+      <p>Verko is a video editor &amp; motion designer cutting reels, ads and brand films that hold attention from the first frame.</p>
+      <span class="lbl">Video Editing<i>\</i>Motion Design<i>\</i>Available 2026</span>
+      <a class="btn" data-mag href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">Follow @verko.motion <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div><span>Reels</span><span>Edits</span><span>Motion Graphics</span><span>Titles</span><span>Color</span><span>Sound</span><span>Reels</span><span>Edits</span><span>Motion Graphics</span><span>Titles</span><span>Color</span><span>Sound</span></div></div>
+
+<section id="work"><div class="w">
+  <div class="hd"><h2 data-r>Selected <em>work</em></h2><span class="lbl" data-r>08 projects <i>\</i> 3 categories</span></div>
+  <div class="cat"><header data-r><h3>Kinetic Typography</h3><span class="lbl">01<i>\</i>Type that moves with the beat</span></header><div class="vg"><div class="vc ls" data-r><video muted loop playsinline preload="metadata" src="clip2.mp4" aria-label="Everything in One Place"></video><div class="cp"><div><b>01  Everything in One Place</b><small>Kinetic text</small></div><a href="https://www.instagram.com/reel/DXRaubCDVdt/" target="_blank" rel="noopener">Watch full ↗</a></div></div><div class="vc ls" data-r><video muted loop playsinline preload="metadata" src="clip4.mp4" aria-label="Anytime."></video><div class="cp"><div><b>02  Anytime.</b><small>Gradient \ type</small></div><a href="https://www.instagram.com/reel/DXwwWVitb6l/" target="_blank" rel="noopener">Watch full ↗</a></div></div><div class="vc ls" data-r><video muted loop playsinline preload="metadata" src="clip6.mp4" aria-label="Reservation Confirmed"></video><div class="cp"><div><b>03  Reservation Confirmed</b><small>Text \ UI reveal</small></div><a href="https://www.instagram.com/reel/DYTt5kftd4m/" target="_blank" rel="noopener">Watch full ↗</a></div></div></div></div>
+  <div class="cat"><header data-r><h3>UI & App Motion</h3><span class="lbl">02<i>\</i>Interfaces brought to life</span></header><div class="vg"><div class="vc ls" data-r><video muted loop playsinline preload="metadata" src="clip3.mp4" aria-label="Let’s Work Together"></video><div class="cp"><div><b>04  Let’s Work Together</b><small>Prompt bar \ UI</small></div><a href="https://www.instagram.com/reel/DXTYIhejXve/" target="_blank" rel="noopener">Watch full ↗</a></div></div><div class="vc pt" data-r><video muted loop playsinline preload="metadata" src="clip7.mp4" aria-label="Animate App UI"></video><div class="cp"><div><b>05  Animate App UI</b><small>App mockup \ Type</small></div><a href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">More on Instagram ↗</a></div></div><div class="vc pt" data-r><video muted loop playsinline preload="metadata" src="clip8.mp4" aria-label="PDF Folder Reveal"></video><div class="cp"><div><b>06  PDF Folder Reveal</b><small>Icon \ Gradient</small></div><a href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">More on Instagram ↗</a></div></div></div></div>
+  <div class="cat"><header data-r><h3>Callouts & Product Motion</h3><span class="lbl">03<i>\</i>Tracked labels and pop-ups</span></header><div class="vg"><div class="vc pt" data-r><video muted loop playsinline preload="metadata" src="clip1.mp4" aria-label="Hero Sensor Callouts"></video><div class="cp"><div><b>07  Hero Sensor Callouts</b><small>Product \ Tracking</small></div><a href="https://www.instagram.com/reel/DgB_rb5A04J/" target="_blank" rel="noopener">Watch full ↗</a></div></div><div class="vc pt" data-r><video muted loop playsinline preload="metadata" src="clip5.mp4" aria-label="Not “Automation”"></video><div class="cp"><div><b>08  Not “Automation”</b><small>Icons \ Callouts</small></div><a href="https://www.instagram.com/reel/DZ2NHD7t6Wx/" target="_blank" rel="noopener">Watch full ↗</a></div></div></div></div>
+</div></section>
+
+<section class="st" id="about"><div class="w"><p id="stmt">I cut for rhythm, design for clarity, and animate so every second earns its place. Fast turnarounds, clean files, zero fluff.</p></div></section>
+
+<section id="services"><div class="w">
+  <div class="hd"><h2 data-r>What I <em>do</em></h2><span class="lbl" data-r>Concept \ Edit \ Animate \ Deliver</span></div>
+  <div class="sv" data-r>
+    <div><h3>Edit</h3><ul><li>Reels &amp; shorts</li><li>Ads &amp; promos</li><li>Podcast &amp; YouTube cuts</li><li>Color &amp; sound</li></ul></div>
+    <div><h3>Motion</h3><ul><li>Kinetic typography</li><li>Logo &amp; title animation</li><li>Social templates</li><li>Transitions &amp; effects</li></ul></div>
+    <div><h3>Brand</h3><ul><li>Visual direction</li><li>Looping assets</li><li>Intros &amp; outros</li><li>Launch-ready exports</li></ul></div>
+  </div>
+</div></section>
+
+<section id="tools"><div class="w">
+  <div class="hd"><h2 data-r>Tools I <em>cut with</em></h2><span class="lbl" data-r>Mobile-first <i>\</i> Pro results</span></div>
+  <div class="tls"><div class="tl" data-r><span class="n">01</span><h3>Alight Motion</h3><span class="t">Motion graphics & edits</span></div><div class="tl" data-r><span class="n">02</span><h3>Keyflow</h3><span class="t">Keyframe animation</span></div><div class="tl" data-r><span class="n">03</span><h3>Ibis Paint X</h3><span class="t">Illustration & assets</span></div><div class="tl" data-r><span class="n">04</span><h3>PicsArt</h3><span class="t">Photo edits & cutouts</span></div><div class="tl" data-r><span class="n">05</span><h3>& more</h3><span class="t">The kit keeps growing</span></div></div>
+</div></section>
+
+<section class="ct" id="contact"><div class="w">
+  <span class="lbl" data-r>Got a project?</span>
+  <h2 data-r>Let’s make it <em>move.</em></h2>
+  <a class="btn" data-r data-mag href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">DM @verko.motion on Instagram <span aria-hidden="true">↗</span></a>
+  <p class="lbl soc" data-r><a href="https://discord.gg/z9RjxWcT" target="_blank" rel="noopener">Discord</a><i>\</i><a href="https://x.com/Verko_3" target="_blank" rel="noopener">X / Verko_3</a><i>\</i><a href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">Instagram</a></p>
+</div></section>
+</main>
+<footer class="w lbl"><span>© 2026 Verko</span><span><a href="https://discord.gg/z9RjxWcT" target="_blank" rel="noopener">Discord</a> \ <a href="https://x.com/Verko_3" target="_blank" rel="noopener">X</a> \ <a href="https://www.instagram.com/verko.motion/" target="_blank" rel="noopener">Instagram</a></span><a href="#top">Back to top ↑</a></footer>
+<div class="peek" aria-hidden="true"><span></span></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script>
+(function(){
+var R=document.documentElement;
+var vids=[].slice.call(document.querySelectorAll('.vc video')),rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window){var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(rm)return;e.isIntersecting?e.target.play().catch(function(){}):e.target.pause()})},{threshold:.35});vids.forEach(function(v){vo.observe(v)})}
+vids.forEach(function(v){v.muted=true;v.addEventListener('click',function(){v.paused?v.play().catch(function(){}):v.pause()})});
+if(!window.gsap||!window.ScrollTrigger){R.classList.remove('js');return}
+gsap.registerPlugin(ScrollTrigger);window.SplitText&&gsap.registerPlugin(SplitText);
+gsap.defaults({ease:'power3.out',duration:.9});
+try{if(window.Lenis){var L=new Lenis({anchors:{offset:-68}});L.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){L.raf(t*1000)});gsap.ticker.lagSmoothing(0)}}catch(e){}
+/* ---- UI sound design (Web Audio, synthesized, off until the viewer turns it on) ---- */
+var AC=null,SON=false,lastW=0;
+function ac(){return AC||(AC=new (window.AudioContext||window.webkitAudioContext)())}
+function tone(f,d,t,v,e){if(!SON)return;var a=ac(),o=a.createOscillator(),g=a.createGain(),n=a.currentTime;o.type=t;o.frequency.setValueAtTime(f,n);e&&o.frequency.exponentialRampToValueAtTime(e,n+d);g.gain.setValueAtTime(v,n);g.gain.exponentialRampToValueAtTime(.0001,n+d);o.connect(g);g.connect(a.destination);o.start(n);o.stop(n+d)}
+function hiss(d,v,f0,f1){if(!SON)return;var a=ac(),n=a.currentTime,b=a.createBuffer(1,Math.floor(a.sampleRate*d),a.sampleRate),x=b.getChannelData(0);for(var i=0;i<x.length;i++)x[i]=Math.random()*2-1;var s=a.createBufferSource();s.buffer=b;var f=a.createBiquadFilter();f.type='bandpass';f.frequency.setValueAtTime(f0,n);f.frequency.exponentialRampToValueAtTime(f1,n+d);var g=a.createGain();g.gain.setValueAtTime(v,n);g.gain.exponentialRampToValueAtTime(.0001,n+d);s.connect(f);f.connect(g);g.connect(a.destination);s.start(n)}
+var SFX={hover:function(){tone(520,.08,'sine',.05,780)},click:function(){tone(150,.2,'sine',.22,45);hiss(.12,.08,3200,800)},whoosh:function(){var t=Date.now();if(t-lastW<700)return;lastW=t;hiss(.55,.1,300,3600)}};
+var sb=document.getElementById('snd'),hv=null;
+sb.addEventListener('click',function(){SON=!SON;sb.textContent=SON?'Sound on':'Sound off';sb.setAttribute('aria-pressed',SON);if(SON){ac().resume();SFX.click()}});
+document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('a,button');if(t&&t!==sb)SFX.click()});
+document.addEventListener('pointerover',function(e){var t=e.target.closest&&e.target.closest('.vc .cp a,.btn,.nav nav a,.tl');if(t&&t!==hv){hv=t;SFX.hover()}else if(!t)hv=null});
+gsap.to('#bar',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.2}});
+var mm=gsap.matchMedia();
+mm.add({ok:'(prefers-reduced-motion: no-preference)',fine:'(hover: hover) and (pointer: fine)'},function(c){
+ var k=c.conditions;if(!k.ok){R.classList.remove('js');return}
+ var h1=document.querySelector('.hero h1'),meta='.hero .meta>*';
+ function intro(){return gsap.from(meta,{y:24,autoAlpha:0,stagger:.12,duration:.8})}
+ if(window.SplitText){SplitText.create(h1,{type:'lines',mask:'lines',autoSplit:true,onSplit:function(s){gsap.set([h1,meta],{visibility:'visible'});return gsap.timeline().from(s.lines,{yPercent:115,duration:1.2,ease:'expo.out',stagger:.12}).add(intro(),'-=.7')}})}
+ else{gsap.set([h1,meta],{visibility:'visible'});gsap.from(h1,{y:40,autoAlpha:0,duration:1});intro()}
+ gsap.to('.orb',{rotation:360,duration:40,ease:'none',repeat:-1});
+ gsap.to('.orb',{borderRadius:'54% 46% 44% 56%/46% 56% 44% 54%',duration:6,yoyo:true,repeat:-1,ease:'sine.inOut'});
+ gsap.to('.orb',{yPercent:30,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+ var mq=gsap.to('.mq div',{xPercent:-50,repeat:-1,duration:26,ease:'none'});
+ ScrollTrigger.create({onUpdate:function(s){var v=Math.min(Math.abs(s.getVelocity())/300,4);gsap.to(mq,{timeScale:1+v,duration:.2,overwrite:true});gsap.to(mq,{timeScale:1,duration:1,delay:.25})}});
+ gsap.set('[data-r]',{autoAlpha:0,y:40});
+ ScrollTrigger.batch('[data-r]',{start:'top 90%',interval:.1,batchMax:6,onEnter:function(e){SFX.whoosh();gsap.to(e,{autoAlpha:1,y:0,stagger:.1,overwrite:true})}});
+ gsap.utils.toArray('.row').forEach(function(r){gsap.from(r,{autoAlpha:0,y:30,scrollTrigger:{trigger:r,start:'top 92%'}})});
+ if(window.SplitText){SplitText.create('#stmt',{type:'words',autoSplit:true,onSplit:function(s){return gsap.fromTo(s.words,{opacity:.14},{opacity:1,stagger:.12,ease:'none',scrollTrigger:{trigger:'#stmt',start:'top 80%',end:'bottom 45%',scrub:true}})}})}
+ var cl=[];
+ if(k.fine){
+  var cur=document.createElement('div');cur.className='cur';document.body.appendChild(cur);
+  var cx=gsap.quickTo(cur,'x',{duration:.3,ease:'power3'}),cy=gsap.quickTo(cur,'y',{duration:.3,ease:'power3'});
+  var pk=document.querySelector('.peek'),px=gsap.quickTo(pk,'x',{duration:.5,ease:'power3'}),py=gsap.quickTo(pk,'y',{duration:.5,ease:'power3'});
+  var mv=function(e){cx(e.clientX);cy(e.clientY);px(e.clientX);py(e.clientY)};addEventListener('pointermove',mv);
+  cl.push(function(){removeEventListener('pointermove',mv);cur.remove()});
+  document.querySelectorAll('a,button').forEach(function(a){a.addEventListener('pointerenter',function(){gsap.to(cur,{scale:3,duration:.3})});a.addEventListener('pointerleave',function(){gsap.to(cur,{scale:1,duration:.3})})});
+  document.querySelectorAll('.row').forEach(function(r){r.addEventListener('pointerenter',function(){pk.querySelector('span').textContent=r.dataset.p;gsap.to(pk,{autoAlpha:1,scale:1,duration:.35,overwrite:true})});r.addEventListener('pointerleave',function(){gsap.to(pk,{autoAlpha:0,scale:.9,duration:.25,overwrite:true})})});
+  document.querySelectorAll('[data-mag]').forEach(function(m){var a=gsap.quickTo(m,'x',{duration:.5,ease:'elastic.out(1,.5)'}),b=gsap.quickTo(m,'y',{duration:.5,ease:'elastic.out(1,.5)'});
+   m.addEventListener('pointermove',function(e){var r=m.getBoundingClientRect();a((e.clientX-r.left-r.width/2)*.3);b((e.clientY-r.top-r.height/2)*.3)});m.addEventListener('pointerleave',function(){a(0);b(0)})});
+ }
+ return function(){cl.forEach(function(f){f()})};
+});
+document.fonts&&document.fonts.ready.then(function(){ScrollTrigger.refresh()});
+addEventListener('load',function(){ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
